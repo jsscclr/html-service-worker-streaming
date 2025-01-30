@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Service Worker + Streams</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body { padding: 1rem; }
+
+    main { display: grid; gap: 1rem; }
+
+    fieldset { border: none; }
+
+    fieldset button { padding: 0.5rem; }
+
+    iframe, button { border: 1px solid; }
+  </style>
+</head>
+<body>
+  <main>
+    <fieldset>
+      <button id="start-stream">Start Stream</button>
+      <button id="send-chunk">Send Chunk</button>
+      <button id="close-stream">Close Stream</button>
+    </fieldset>
+
+    <a id="anchor" href="" target="_blank"><output id="request-url"></output></a>
+    <iframe id="iframe" width="100%" height="300"></iframe>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
